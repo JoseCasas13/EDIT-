@@ -1,0 +1,65 @@
+
+
+body {
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    background-image: url(./assets/preview.png);
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-direction: column;
+}
+
+.flex {
+    justify-content: center;
+    
+   
+
+}
+.flex button {
+    background: transparent;
+    color: white;
+    border: 0px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    min-height: 64px;
+    position: fixed;
+    bottom: 0;
+    background: black;
+  }
+
+nav button {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: transparent;
+    color: white;
+    align-items: center;
+    gap: 4px;
+    border: 0;
+    justify-content: center;
+  }
+
+nav button img {
+    width: 22px;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: black;
+  }
