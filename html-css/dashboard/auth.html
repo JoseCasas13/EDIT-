@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="dashboard-logo">
+        <a href="index.html"> <img src="assets/logo.png" alt="Logotipo" /></a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="container-wrapper">
+          <img src="/assets/logo.png" alt="Logotipo" />
+          <h1>Welcome Back!</h1>
+          <p>Log into your account!</p>
+        </div>
+        <form>
+          <div class="form__wrapper">
+            <div class="form-input">
+              <input type="text" placeholder="Email Address" required />
+            </div>
+            <div class="form-input">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div class="form-password">
+              <div>
+                <a href="#">Recover Password</a>
+              </div>
+            </div>
+          </div>
+          <div class="form__actions">
+            <div class="form-signup">
+              <span
+                >Don't have an account?
+                <a href="#" class="link-signup">Sign Up</a></span
+              >
+            </div>
+            <div class="submit">
+              <button class="btn btn-submit" type="submit">Login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    let submitBtn = document.querySelector('[type="submit"]');
+    let inputs = document.querySelectorAll("input");
+
+    submitBtn.addEventListener("click", (e) => {
+      let validation = true;
+
+      e.preventDefault();
+      inputs.forEach((input) => {
+        if (input.value === "") {
+          validation = false;
+          alert("nao passa");
+          return;
+        }
+        window.location = "/";
+      });
+    });
+  </script>
+</html>

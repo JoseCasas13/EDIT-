@@ -1,0 +1,97 @@
+@import 'styles/partials/reset';
+@import 'styles/partials/colors';
+@import 'styles/partials/typography';
+@import 'styles/partials/grid';
+@import 'styles/partials/module';
+@import 'styles/components/menu';
+@import 'styles/partials/buttons';
+
+
+header {
+    width: 100%;
+    background-color: $white;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.dashboard-logo{
+    background-color: $white;
+    padding: 12px;
+    height: 35px;
+    display: contents;
+    img{
+        width: 35px;
+        height: auto;
+    }
+}
+
+.wrapper{
+    text-align: center;
+}
+.container{
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 64px auto;
+    width: 70vw;
+    flex-direction: column;
+    justify-content: center;
+    
+    .row{
+    justify-content: center;
+        
+    }
+    
+
+    
+    .container-wrapper{
+    text-align: center;
+}
+    .form__wrapper{
+        text-align: center;
+    }
+    .form__actions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-password{
+        text-align: end;
+    }
+
+    a{
+        color: map-get($primary, "100");
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        font-weight: 300;
+        
+    }
+    input{
+        margin: 5px 0;
+        padding: 8px 16px;
+        width: 265px;
+        height: 30px;
+        background: rgba(239, 241, 249, 0.6); 
+        border-radius: 8px;
+        border: none;
+    }
+}
+
+span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: map-get($black, "30");
+}
+
+
+
